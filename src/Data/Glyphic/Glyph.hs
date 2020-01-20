@@ -1,12 +1,10 @@
 {-|
-Module      : W
-Description : Short description
-Copyright   : (c) Some Guy, 2013
-                  Someone Else, 2014
-License     : GPL-3
-Maintainer  : sample@email.com
+Module      : Data.Glyphic.Glyph
+Description : An ascii art drawing parser for interfacing between humans and programs.
+Copyright   : (c) Art Yerkes (2020).
+License     : BSD
+Maintainer  : art.yerkes@gmail.com
 Stability   : experimental
-Portability : POSIX
 
 Data.Glyphic is a simple library which parses an ascii drawing of boxes, box contents and
 connections between boxes as a collection of Glyphs and Nets that describe the drawing.
