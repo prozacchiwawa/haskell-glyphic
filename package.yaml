@@ -1,0 +1,53 @@
+name:                glyphic
+version:             0.1.0.0
+github:              "prozacchiwawa/glyphic"
+license:             BSD3
+author:              "Art Yerkes"
+maintainer:          "art.yerkes@gmail.com"
+copyright:           "2020 Art Yerkes"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/prozacchiwawa/glyphic#readme>
+
+default-extensions:
+  - RecordWildCards
+  - ScopedTypeVariables
+  - TupleSections
+
+dependencies:
+  - base >= 4.7 && < 5
+  - containers
+  - text
+  - vector
+
+library:
+  source-dirs: src
+
+  exposed-modules:
+    - Data.Glyphic.CharPlane
+    - Data.Glyphic.CharPlane.Simple
+    - Data.Glyphic.Glyph
+    - Data.Glyphic.Rect
+
+tests:
+  glyphic-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - glyphic
+    - hspec
+    - hspec-expectations
