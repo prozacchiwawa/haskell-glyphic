@@ -3,7 +3,7 @@
 Parse ascii drawings like this:
 
 ```
-           +--------------------|--+
+           +--------------------+--+
            |                    |  |
      ,-----I-J--------.         |  |
      | id: mainbox    |  JUNK   |  |
