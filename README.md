@@ -2,7 +2,7 @@
 
 Parse ascii drawings like this:
 
-@
+```
            +--------------------|--+
            |                    |  |
      ,-----I-J--------.         |  |
@@ -20,7 +20,7 @@ Parse ascii drawings like this:
         |      ,------'
         |      |
         `------'
-@
+```
 
 and apply a parser to the data inside each proper rectangle.
 
