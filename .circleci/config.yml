@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: haskelljp/antenna:latest
+      - image: fpco/stack-build:latest
     steps:
       - checkout
       - run: stack test
